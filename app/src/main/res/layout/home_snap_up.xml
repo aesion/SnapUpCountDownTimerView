@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="秒杀"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp"
+            />
+
+        <com.aesion.snapupdowntimerview.SnapUpCountDownTimerView
+            android:id="@+id/RushBuyCountDownTimerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:viewSize="12"
+            >
+        </com.aesion.snapupdowntimerview.SnapUpCountDownTimerView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="更多 >"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <com.nodeprogress.snapupview.View.HorizontalRecycleViewLoadMore
+        android:id="@+id/recycle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.nodeprogress.snapupview.View.HorizontalRecycleViewLoadMore>
+
+
+
+</LinearLayout>
