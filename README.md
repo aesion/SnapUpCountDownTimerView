@@ -33,3 +33,23 @@ So easy 是不是很简单，赶紧试试吧
 
 
 ![](https://raw.githubusercontent.com/aesion/SnapUpCountDownTimerView/master/images/S60702-170557.jpg)
+
+
+当然，我们安卓自带了一个CountDownTimer类，大家可以看一看
+
+```java
+private TextView vertifyView;  
+    private CountDownTimer timer = new CountDownTimer(10000, 1000) {  
+  
+        @Override  
+        public void onTick(long millisUntilFinished) {  
+            vertifyView.setText((millisUntilFinished / 1000) + "秒后可重发");  
+        }  
+  
+        @Override  
+        public void onFinish() {  
+            vertifyView.setEnabled(true);  
+            vertifyView.setText("获取验证码");  
+        }  
+    }; 
+```
