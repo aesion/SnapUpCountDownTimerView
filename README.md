@@ -40,7 +40,7 @@
         rushBuyCountDownTimerView.start();//开始倒计时
 ```
 
-    rushBuyCountDownTimerView.start();//停止倒计时
+    rushBuyCountDownTimerView.stop();//停止倒计时
 
 
 So easy 是不是很简单，赶紧试试吧
