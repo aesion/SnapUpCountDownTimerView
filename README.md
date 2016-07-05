@@ -18,18 +18,17 @@
 
 ## Gradle引用 ##
 
-	compile 'com.daidingkang:snapupdowntimerview:1.0.0'
+	compile 'com.daidingkang:snapupcountdowntimerview:1.0.0'
 
 ## 在你的Xml中 ##
 
-	<com.aesion.snapupdowntimerview.SnapUpCountDownTimerView
-            android:id="@+id/RushBuyCountDownTimerView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            app:viewSize="12"
-            >
-    </com.aesion.snapupdowntimerview.SnapUpCountDownTimerView>
+	<com.daidingkang.SnapUpCountDownTimerView
+	android:id="@+id/RushBuyCountDownTimerView"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="20dp"
+	app:viewSize="12">
+	</com.daidingkang.SnapUpCountDownTimerView>
 
 
 ## 用法 ##
